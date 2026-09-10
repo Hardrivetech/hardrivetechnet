@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { PUBLIC_WEB3FORMS_ACCESS_KEY } from '$env/static/public';
-
+    const PUBLIC_WEB3FORMS_ACCESS_KEY = "0d0bfbd7-72ec-4679-ae4c-735c589e7244";
 	type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
 
 	let name = $state('');
