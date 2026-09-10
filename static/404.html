@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#090a0f" />
+		<meta name="robots" content="noindex" />
+		<title>404 — HardriveTech</title>
+		<style>
+			:root {
+				color-scheme: dark;
+			}
+			html,
+			body {
+				height: 100%;
+			}
+			body {
+				margin: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 2rem;
+				padding: 1.5rem;
+				text-align: center;
+				background: #090a0f;
+				color: #e2e8f0;
+				font-family:
+					ui-sans-serif,
+					system-ui,
+					-apple-system,
+					'Segoe UI',
+					Roboto,
+					sans-serif;
+			}
+			.panel {
+				border: 1px solid rgba(255, 255, 255, 0.1);
+				background: rgba(255, 255, 255, 0.03);
+				border-radius: 0.75rem;
+				padding: 1rem 1.5rem;
+				font-family: ui-monospace, 'JetBrains Mono', 'Cascadia Code', monospace;
+				font-size: 0.875rem;
+			}
+			.panel p {
+				margin: 0;
+			}
+			.panel .cmd {
+				color: #38bdf8;
+			}
+			.panel .err {
+				color: #f87171;
+				margin-top: 0.5rem;
+			}
+			h1 {
+				margin: 0;
+				font-size: clamp(1.75rem, 5vw, 2.75rem);
+				font-weight: 700;
+				color: #ffffff;
+			}
+			p.lede {
+				max-width: 28rem;
+				color: #94a3b8;
+				margin: 0;
+			}
+			a.btn {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5rem;
+				border-radius: 0.5rem;
+				padding: 0.75rem 1.5rem;
+				font-size: 0.875rem;
+				font-weight: 600;
+				color: #ffffff;
+				text-decoration: none;
+				background: linear-gradient(to right, #6366f1, #818cf8);
+				box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.4);
+			}
+			a.btn:hover {
+				filter: brightness(1.1);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="panel">
+			<p class="cmd">$ curl /this-page</p>
+			<p class="err">error: 404 Not Found</p>
+		</div>
+		<h1>This route doesn't exist.</h1>
+		<p class="lede">
+			Whatever you were looking for isn't here — but the rest of the site is still standing by.
+		</p>
+		<a class="btn" href="/">Back to safety</a>
+	</body>
+</html>

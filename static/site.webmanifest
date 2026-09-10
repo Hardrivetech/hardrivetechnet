@@ -1,0 +1,26 @@
+{
+	"name": "HardriveTech — Systems Engineer Portfolio",
+	"short_name": "HardriveTech",
+	"description": "Personal portfolio of HardriveTech — systems engineering, game engines, and embedded/mobile software.",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#090a0f",
+	"theme_color": "#090a0f",
+	"icons": [
+		{
+			"src": "/favicon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "/favicon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "/apple-touch-icon.png",
+			"sizes": "180x180",
+			"type": "image/png"
+		}
+	]
+}
