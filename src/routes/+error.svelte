@@ -23,7 +23,7 @@
 
 	<a
 		href="/"
-		class="mt-8 inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-accent-indigo to-accent-indigo-bright px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent-indigo/20 transition hover:brightness-110"
+		class="mt-8 inline-flex items-center gap-2 rounded-md bg-linear-to-r from-accent-indigo to-accent-indigo-bright px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent-indigo/20 transition hover:brightness-110"
 	>
 		Back to safety
 	</a>

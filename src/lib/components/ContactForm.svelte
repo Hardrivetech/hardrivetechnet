@@ -100,7 +100,7 @@
 				bind:value={name}
 				onblur={() => markTouched('name')}
 				placeholder="Ada Lovelace"
-				class={`w-full rounded-md border bg-white/[0.03] px-4 py-2.5 text-sm text-white placeholder:text-slate-600 focus:outline-none ${
+				class={`w-full rounded-md border bg-white/3 px-4 py-2.5 text-sm text-white placeholder:text-slate-600 focus:outline-none ${
 					touched.name && errors.name
 						? 'border-red-400/50 focus:border-red-400'
 						: 'border-white/10 focus:border-accent-cyan/50'
@@ -123,7 +123,7 @@
 				bind:value={email}
 				onblur={() => markTouched('email')}
 				placeholder="you@example.com"
-				class={`w-full rounded-md border bg-white/[0.03] px-4 py-2.5 text-sm text-white placeholder:text-slate-600 focus:outline-none ${
+				class={`w-full rounded-md border bg-white/3 px-4 py-2.5 text-sm text-white placeholder:text-slate-600 focus:outline-none ${
 					touched.email && errors.email
 						? 'border-red-400/50 focus:border-red-400'
 						: 'border-white/10 focus:border-accent-cyan/50'
@@ -150,7 +150,7 @@
 				bind:value={message}
 				onblur={() => markTouched('message')}
 				placeholder="Tell me about the system you're building..."
-				class={`w-full resize-none rounded-md border bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-slate-600 focus:outline-none ${
+				class={`w-full resize-none rounded-md border bg-white/3 px-4 py-3 text-sm text-white placeholder:text-slate-600 focus:outline-none ${
 					touched.message && errors.message
 						? 'border-red-400/50 focus:border-red-400'
 						: 'border-white/10 focus:border-accent-cyan/50'
@@ -168,7 +168,7 @@
 		<button
 			type="submit"
 			disabled={status === 'submitting'}
-			class="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-accent-indigo to-accent-indigo-bright px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent-indigo/20 transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
+			class="inline-flex items-center gap-2 rounded-md bg-linear-to-r from-accent-indigo to-accent-indigo-bright px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent-indigo/20 transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
 		>
 			{#if status === 'submitting'}
 				<span

@@ -10,7 +10,7 @@
 		<div class="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
 			<div class="flex items-center gap-2.5">
 				<span
-					class="flex h-8 w-8 items-center justify-center rounded-md bg-gradient-to-br from-accent-indigo to-accent-cyan text-sm font-bold text-obsidian-950"
+					class="flex h-8 w-8 items-center justify-center rounded-md bg-linear-to-br from-accent-indigo to-accent-cyan text-sm font-bold text-obsidian-950"
 				>
 					H
 				</span>
