@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PUBLIC_WEB3FORMS_ACCESS_KEY } from '$env/static/public';
+	import { env } from '$env/dynamic/public';
 	type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
 
 	let name = $state('');
@@ -67,14 +67,14 @@ $effect(() => {
 				// Ignore parsing errors
 			}
 		}
-		}
-	});
+	}
+});
 	async function submitViaWeb3Forms() {
 		const response = await fetch('https://api.web3forms.com/submit', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
 			body: JSON.stringify({
-				access_key: PUBLIC_WEB3FORMS_ACCESS_KEY,
+				access_key: env.PUBLIC_WEB3FORMS_ACCESS_KEY,
 				subject: `New message from ${name} via hardrivetech.net`,
 				from_name: 'HardriveTech contact form',
 				name,
@@ -97,7 +97,7 @@ $effect(() => {
 		status = 'submitting';
 
 		try {
-			if (PUBLIC_WEB3FORMS_ACCESS_KEY) {
+			if (env.PUBLIC_WEB3FORMS_ACCESS_KEY) {
 				await submitViaWeb3Forms();
 			} else {
 				// No form backend configured yet — see README for setup.

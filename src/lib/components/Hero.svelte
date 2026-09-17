@@ -52,7 +52,7 @@
 				<div class="mt-10 flex flex-wrap items-center gap-4">
 							<a
 								href="#projects"
-								class="group relative inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-accent-indigo to-accent-indigo-bright px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent-indigo/20 transition-all duration-300 hover:shadow-accent-indigo/40 hover:brightness-110 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-accent-cyan focus:ring-offset-2 focus:ring-offset-obsidian-950"
+								class="group relative inline-flex items-center gap-2 rounded-md bg-linear-to-r from-accent-indigo to-accent-indigo-bright px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent-indigo/20 transition-all duration-300 hover:shadow-accent-indigo/40 hover:brightness-110 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-accent-cyan focus:ring-offset-2 focus:ring-offset-obsidian-950"
 								aria-label="View top projects section"
 							>
 								View Top Projects
@@ -73,7 +73,7 @@
 							</a>
 							<a
 								href="#contact"
-								class="group relative inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/[0.02] px-6 py-3 text-sm font-semibold text-slate-200 transition-all duration-300 hover:border-white/30 hover:bg-white/[0.06] hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-accent-cyan focus:ring-offset-2 focus:ring-offset-obsidian-950"
+								class="group relative inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/2 px-6 py-3 text-sm font-semibold text-slate-200 transition-all duration-300 hover:border-white/30 hover:bg-white/6 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-accent-cyan focus:ring-offset-2 focus:ring-offset-obsidian-950"
 								aria-label="Go to contact section"
 							>
 								Get in Touch
