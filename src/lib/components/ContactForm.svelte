@@ -38,14 +38,14 @@
 	function markTouched(field: keyof typeof touched) {
 		touched[field] = true;
 	}
-	
+
 	// Enhanced keyboard navigation support
 	function handleKeyDown(event: KeyboardEvent) {
 		if (event.key === 'Escape' && status !== 'idle') {
 			status = 'idle';
 		}
 	}
-	
+
 // Auto-save form data to localStorage for better UX
 $effect(() => {
 	if (status === 'idle') {
@@ -88,7 +88,7 @@ $effect(() => {
 			throw new Error(result.message ?? 'Submission failed.');
 		}
 	}
-	
+
 	async function handleSubmit(event: SubmitEvent) {
 		event.preventDefault();
 		touched = { name: true, email: true, message: true };
@@ -148,7 +148,6 @@ $effect(() => {
 						</svg>
 					</span>
 				{/if}
-			}
 			</div>
 			{#if touched.name && errors.name}
 				<p id="name-error" class="mt-1.5 text-xs text-red-400 flex items-center gap-1">
