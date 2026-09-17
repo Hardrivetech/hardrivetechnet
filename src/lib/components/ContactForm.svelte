@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { env } from '$env/dynamic/public';
+	//import { env } from '$env/dynamic/public';
+	const PUBLIC_WEB3FORMS_ACCESS_KEY = '0d0bfbd7-72ec-4679-ae4c-735c589e7244'
 	type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
 
 	let name = $state('');
@@ -74,7 +75,7 @@ $effect(() => {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
 			body: JSON.stringify({
-				access_key: env.PUBLIC_WEB3FORMS_ACCESS_KEY,
+				access_key: PUBLIC_WEB3FORMS_ACCESS_KEY,
 				subject: `New message from ${name} via hardrivetech.net`,
 				from_name: 'HardriveTech contact form',
 				name,
@@ -97,7 +98,7 @@ $effect(() => {
 		status = 'submitting';
 
 		try {
-			if (env.PUBLIC_WEB3FORMS_ACCESS_KEY) {
+			if (PUBLIC_WEB3FORMS_ACCESS_KEY) {
 				await submitViaWeb3Forms();
 			} else {
 				// No form backend configured yet — see README for setup.
