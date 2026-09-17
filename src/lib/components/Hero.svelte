@@ -50,33 +50,45 @@
 				</p>
 
 				<div class="mt-10 flex flex-wrap items-center gap-4">
-					<a
-						href="#projects"
-						class="group relative inline-flex items-center gap-2 rounded-md bg-linear-to-r from-accent-indigo to-accent-indigo-bright px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent-indigo/20 transition-all duration-300 hover:shadow-accent-indigo/40 hover:brightness-110 hover:-translate-y-0.5"
-					>
-						View Top Projects
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="h-4 w-4 transition-transform group-hover:translate-x-0.5"
-							viewBox="0 0 24 24"
-							fill="none"
-						>
-							<path
-								d="M5 12h14M13 6l6 6-6 6"
-								stroke="currentColor"
-								stroke-width="1.75"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							/>
-						</svg>
-					</a>
-					<a
-						href="#contact"
-						class="group relative inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/2 px-6 py-3 text-sm font-semibold text-slate-200 transition-all duration-300 hover:border-white/30 hover:bg-white/6 hover:-translate-y-0.5"
-					>
-						Get in Touch
-					</a>
-				</div>
+							<a
+								href="#projects"
+								class="group relative inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-accent-indigo to-accent-indigo-bright px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent-indigo/20 transition-all duration-300 hover:shadow-accent-indigo/40 hover:brightness-110 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-accent-cyan focus:ring-offset-2 focus:ring-offset-obsidian-950"
+								aria-label="View top projects section"
+							>
+								View Top Projects
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-4 w-4 transition-all group-hover:translate-x-0.5 group-hover:scale-110"
+									viewBox="0 0 24 24"
+									fill="none"
+								>
+									<path
+										d="M5 12h14M13 6l6 6-6 6"
+										stroke="currentColor"
+										stroke-width="1.75"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</a>
+							<a
+								href="#contact"
+								class="group relative inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/[0.02] px-6 py-3 text-sm font-semibold text-slate-200 transition-all duration-300 hover:border-white/30 hover:bg-white/[0.06] hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-accent-cyan focus:ring-offset-2 focus:ring-offset-obsidian-950"
+								aria-label="Go to contact section"
+							>
+								Get in Touch
+							</a>
+							</div>
+							<div class="mt-8 flex items-center gap-6 text-sm">
+								<div class="flex items-center gap-2">
+									<div class="h-2 w-2 rounded-full bg-accent-emerald animate-pulse"></div>
+									<span class="text-slate-400">Available for select projects</span>
+								</div>
+								<div class="flex items-center gap-2">
+									<span class="text-slate-500">•</span>
+									<span class="text-slate-400">Remote / United States</span>
+								</div>
+							</div>
 
 				<div class="mt-14 grid grid-cols-3 gap-6 border-t border-white/5 pt-8 sm:max-w-md">
 					<div class="opacity-0 animate-fade-in-up animation-delay-300">
@@ -96,33 +108,33 @@
 
 			<div class="relative">
 				<div
-					class="glass-panel rounded-xl border border-white/10 p-1 shadow-2xl shadow-black/40 animate-float opacity-0 animate-fade-in-up animation-delay-600"
+					class="group glass-panel rounded-xl border border-white/10 p-1 shadow-2xl shadow-black/40 animate-float opacity-0 animate-fade-in-up animation-delay-600 transition-all duration-300 hover:shadow-accent-indigo/20 hover:-translate-y-1"
 				>
 					<div class="flex items-center gap-1.5 border-b border-white/5 px-4 py-3">
-						<span class="h-2.5 w-2.5 rounded-full bg-red-400/70"></span>
-						<span class="h-2.5 w-2.5 rounded-full bg-yellow-400/70"></span>
-						<span class="h-2.5 w-2.5 rounded-full bg-emerald-400/70"></span>
-						<span class="ml-3 font-mono text-[11px] text-slate-500">whoami --watch</span>
+						<span class="h-2.5 w-2.5 rounded-full bg-red-400/70 transition-colors group-hover:bg-red-400"></span>
+						<span class="h-2.5 w-2.5 rounded-full bg-yellow-400/70 transition-colors group-hover:bg-yellow-400"></span>
+						<span class="h-2.5 w-2.5 rounded-full bg-emerald-400/70 transition-colors group-hover:bg-emerald-400"></span>
+						<span class="ml-3 font-mono text-[11px] text-slate-500 transition-colors group-hover:text-accent-cyan">whoami --watch</span>
 					</div>
 					<div class="space-y-3 p-6 font-mono text-[13px]">
-						<p class="text-slate-500">$ whoami</p>
+						<p class="text-slate-500 group-hover:text-slate-300 transition-colors">$ whoami</p>
 						{#each telemetry as row (row.label)}
-							<div class="flex items-center justify-between gap-4">
-								<span class="text-slate-500">{row.label}</span>
-								<span class={row.tone}>{row.value}</span>
+							<div class="flex items-center justify-between gap-4 group/item hover:bg-white/5 -mx-2 px-2 py-1 rounded transition-all">
+								<span class="text-slate-500 group-hover/item:text-accent-cyan transition-colors">{row.label}</span>
+								<span class={`font-mono ${row.tone} group-hover/item:scale-105 transition-transform`}>{row.value}</span>
 							</div>
 						{/each}
-						<div class="flex items-center gap-2 pt-2 text-slate-500">
+						<div class="flex items-center gap-2 pt-2 text-slate-500 group-hover:text-accent-cyan transition-colors">
 							<span class="text-accent-cyan">›</span>
-							<span class="inline-block h-4 w-2 animate-pulse bg-accent-cyan/70"></span>
+							<span class="inline-block h-4 w-2 animate-pulse bg-accent-cyan/70 group-hover:animate-none group-hover:bg-accent-cyan transition-all"></span>
 						</div>
 					</div>
 				</div>
 
 				<div
-					class="absolute -right-6 -bottom-6 hidden rounded-lg border border-white/10 bg-obsidian-800/80 px-4 py-3 font-mono text-[11px] text-slate-400 shadow-xl backdrop-blur sm:block opacity-0 animate-fade-in-up animation-delay-700"
+					class="absolute -right-6 -bottom-6 hidden rounded-lg border border-white/10 bg-obsidian-800/80 px-4 py-3 font-mono text-[11px] text-slate-400 shadow-xl backdrop-blur sm:block opacity-0 animate-fade-in-up animation-delay-700 transition-all group-hover:bg-accent-indigo/20 group-hover:border-accent-indigo/30 group-hover:text-white"
 				>
-					<span class="text-accent-emerald">✓</span> zero-allocation hot path
+					<span class="text-accent-emerald group-hover:text-accent-cyan transition-colors">✓</span> zero-allocation hot path
 				</div>
 			</div>
 		</div>
